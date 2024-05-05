@@ -56,7 +56,7 @@ export class ProjectService {
       about:"Your premier destination for mobile app development, web applications, and innovative software solutions.",
       disp:`CodingHub is more than just a software company website; it's a gateway to exploring our extensive portfolio. 
       Each project has its own dedicated page, meticulously detailing its functionality, features, and innovative solutions.
-       Dive deeper into our projects, meet the unique needs of each client.`,
+       Dive deeper into our projects, meet the unique needs of each client. Which is very Helpfull for us`,
       links : [
         { text: 'Link 1', iconVisible: false },
         { text: 'Link 2', iconVisible: false },
