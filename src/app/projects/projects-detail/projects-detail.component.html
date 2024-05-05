@@ -1,0 +1,29 @@
+<div class="container mt-5">
+   <div class="row mt-5" *ngFor="let data of projects">
+      <div class="col-md-5">
+         <div class="card border border-3 border-info">
+
+            <!-- <div class="grow">
+               <img [src]="data.url" class="card-img" height="200px" >
+            </div> -->
+
+            <video controls>
+               <source [src]="data.url" type="video/mp4">
+               <source [src]="data.url" type="video/ogg">
+               Your browser does not support the video tag.
+            </video>
+
+         </div>
+      </div>
+
+      <div class="col-md-7">
+         <a [href]="data.link" target="_blank" [id]="data?.id" class="links" (mouseenter)="showIcon(data?.links)" (mouseleave)="closeIcon(data?.links)">
+            <span class="fwbold fs-3 text-info">{{data?.title}}   <i *ngIf="data?.links.iconVisible" class="bi bi-link-45deg fs-3"></i></span>
+         </a>
+         <P>{{data?.about}}
+         </P>
+         <p>{{data?.disp}}</p>
+         <!-- <button class="btn btn-warning mt-3 fw-bold" [routerLink]="['/detail',data.id]">Read more</button> -->
+      </div>
+   </div>
+</div>

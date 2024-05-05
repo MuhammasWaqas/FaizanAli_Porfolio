@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-expand-sm p-2" #nav>
+
+    <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbar'>
+    <span class='navbar-toggler-icon'></span></button>
+
+        <a href="home" class="navbar-brand ms-3 text-danger">FA</a>
+    <div class='collapse navbar-collapse justify-content-end' id='navbar'>
+       <ul class="navbar-nav">
+               <div class="nav-item">
+                    <a routerLink="projects" class="nav-link" (click)="setPageTitle('Our Projects')">Project</a>
+               </div>
+                 <div class="nav-item">    
+                    <a routerLink="resume" class="nav-link" (click)="setPageTitle('Resume')">resume</a>
+                 </div>
+                 <div class="nav-item">
+                    <a routerLink="contact" class="nav-link" (click)="setPageTitle('Contact')">contact</a>
+                 </div>
+               <div class="them">
+                <a class="nav-link" (click)="func()"><i class="bi bi-brightness-low"></i></a>
+               </div>
+       </ul>
+    </div>
+  </nav>
+<router-outlet>  </router-outlet>
+   
+
+
+
+
+
+
+
+    <!-- <li class="navitem dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-moon"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"  (click)="changeTheme()"><i class="bi bi-moon-fill"></i> dark</a></li>
+              <li><a class="dropdown-item"  (click)="realTheme()"><i class="bi bi-brightness-low"></i> light</a></li>
+            </ul>
+          </li> -->

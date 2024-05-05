@@ -1,0 +1,96 @@
+
+<div class="container mt-5">
+      <!-- <button (click)="getToastr()">click</button> -->
+    <div class="row">
+      <div class="col-md-4">
+      <div class="card p-5 mt-3 border-info border-3">
+          <a href="mailto:hafizfaizanali66@gmail.com" class="btn btn-light fw-bold mt-3"> 
+            <i class="bi bi-envelope-at fs-5 text-dark"></i>
+            Contact With email
+          </a>
+          <a href="//api.whatsapp.com/send?phone=+92 307 9271839&text=Hey,Faizan Ali I Wanted to telling with him" target="_blank"
+             class="btn btn-success fw-bold  mt-3"> 
+           <i class="bi bi-whatsapp fs-5"></i>
+           Contact with whatsapp
+          </a>
+          <a href="tel:+92 307 9271839" class="btn btn-warning fw-bold mt-3"> 
+           <i class="bi bi-telephone-forward"></i>
+           +92307-9271839
+          </a>
+          <button class="btn btn-light mt-3">
+           <i class="bi bi-geo-alt-fill fs-5"></i><span class="fw-bold">Our location</span>
+          </button>
+         <b class="mt-3"> Street no.9 Niazi Colony ,Rahim Yar Khan,Pakistan</b>
+    </div>
+      </div>
+
+    <div class="offset-md-1 col-md-6 mt-sm-3">
+          <form  [formGroup]="contactForm" class="bg-light p-3 rounded"  (ngSubmit)="getFromValue()">
+               <h3 class="mt-4 text-danger">Let's Work togather.</h3>
+               <div class="form-floating">
+                <input type="text" placeholder="Name" formControlName="name" class="form-control mt-4">
+                <label>name*</label>
+               </div>
+                <span *ngIf="formcontrol['name'].invalid && formcontrol['name'].touched && formcontrol['name'].errors?.['required']" class="text-danger fw-bold">
+                     name is required!
+                 </span>
+                 <div class="form-floating">
+                  <input type="email" placeholder="email" formControlName="email" class="form-control mt-3">
+                  <label>email*</label>
+                 </div>
+                <span *ngIf="formcontrol['email'].touched  && formcontrol['email'].errors?.['required']" class="text-danger fw-bold">
+                      email is required!
+                 </span>
+             <!-- <input type="text" placeholder="Your Subject *" formControlName="subject" class="form-control mt-3">
+                <span *ngIf="formcontrol['subject'].touched && formcontrol['subject'].errors?.['required']" class="text-danger fw-light">
+                      subject is required!
+                </span> -->
+                <div class="form-floating">
+                  <textarea formControlName="description" placeholder="message" class="form-control  mt-3"></textarea>
+                  <label>massege*</label>
+                </div>
+                <span *ngIf="formcontrol['description'].touched && formcontrol['description'].errors?.['required']" class="text-danger fw-bold">
+                      description is required!
+                </span>
+                <div class=" mt-3">
+                   <button class="btn btn-success" [disabled]="contactForm.invalid">Send message </button>
+                   
+                </div>
+           </form>
+      </div>
+       
+    </div>       
+</div>
+
+   <!-- Display Firebase Data -->
+<!-- 
+<button class="btn btn-success mt-3" (click)="showData()">show data</button>
+ -->
+<!--just Country code is required. And space between nummber is not any a issue like that +92 302 2008288 -->
+ <!-- <div class="container">
+     <h5 class="text-warning">Just for Testing whatsapp contact</h5>
+    <div class="row">
+      <div class="col-md-12">
+        <h6>Chat with AWAIS</h6>
+
+        <a href="//api.whatsapp.com/send?phone= +923052950002 & text = Hey,Awais Ali I wanted to meet him" target="_blank"
+        class="btn btn-success py-2 fw-bold"> 
+          <i class="bi bi-whatsapp fs-5"></i>
+         contact With awais
+       </a>
+
+      <h6>Chat with QAMAR ZAMAN</h6>
+      <a href="//api.whatsapp.com/send?phone=+92 307 2805151&text=Hey,Qamar How Are You" target="_blank"
+      class="btn btn-success py-2 fw-bold"> 
+        <i class="bi bi-whatsapp fs-5"></i>
+       contact With Qamar
+      </a>
+      </div>
+    </div>
+</div>   -->
+
+<!-- <a href="https://api.whatsapp.com/send?phone= +92 307 2805151 &text=Hey,Awais Ali I Wanted to telling with him" target="_blank"
+    class="btn btn-success fw-bold  mt-3"> 
+  <i class="bi bi-whatsapp fs-5"></i>
+  Contact with whatsapp
+  </a> -->

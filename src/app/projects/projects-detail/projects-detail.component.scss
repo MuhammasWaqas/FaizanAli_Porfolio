@@ -1,0 +1,16 @@
+.grow img {
+    transition: 1s ease;
+    opacity: 0.8;
+}
+
+
+.grow img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+    opacity: 1;
+}
+.links{
+    text-decoration: none;
+}

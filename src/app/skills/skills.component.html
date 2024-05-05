@@ -1,0 +1,70 @@
+<!-- <div class="container mt-5">
+          <h2 class="fw-bold text-center text-info">Our Skills </h2>
+    <div class="row mt-3 text-center">
+        <div class="col-md-3">
+            <img src="assets/icon/html.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/css.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/bootstrap5.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/tailwind.jpeg" alt="" height="100" width="100px">
+        </div>
+    </div>
+    <div class="row mt-5 text-center">
+        <div class="col-md-3">
+            <img src="assets/icon/js.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/ts.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/Angular_icon.jpeg" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/github.png" alt="" height="100" width="100px">
+        </div>
+    </div>
+    <div class="row mt-5 text-center">
+        <div class="col-md-3">
+            <img src="assets/icon/tw.jpeg" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/postman.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/swager.jpeg" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/npm.png" alt="" height="100" width="100px">
+        </div>
+    </div>
+ 
+    <div class="row mt-5 text-center">
+        <div class="col-md-3">
+            <img src="assets/icon/nodejs.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/netcore.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/mysql.png" alt="" height="100" width="100px">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/icon/mangodb.png" alt="" height="100" width="100px">
+        </div>
+    </div>
+</div> -->
+
+
+   <div class="container mt-5">
+    <h2 class="fw-bold text-center text-info">Our Skills </h2>
+      <div class="row text-center mt-3">
+        <div class="col-md-3 mt-4" *ngFor="let val of skillsIcon">
+            <img [src]="val" alt="" height="80" width="80px">
+        </div>
+      </div>
+   </div>

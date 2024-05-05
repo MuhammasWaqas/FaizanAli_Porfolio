@@ -1,0 +1,41 @@
+nav{
+    background-color:#FFD4B2;
+}
+ul,a{
+    color: rgb(240, 12, 88);
+    font-size: 22px;
+}
+ .nav-item:hover{
+    // border:1px solid wheat;
+    text-decoration: underline;
+    transition: 0.4s;
+  
+    }
+    a:hover{
+     color: gold;
+     transition: 0.4s;
+    }
+    // .nav-item{
+    //     // border:1px solid transparent;
+    //     // padding:1px;
+    //     // transition:all 0.6s;
+    //     }
+        nav{
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        //Theme
+        .theme{
+             background-color: black;
+             color:white;
+        }
+
+        .them a{
+            cursor: pointer;
+        }
+        
+        .navbartheme{
+            background-color: rgb(223, 223, 235);
+        }
