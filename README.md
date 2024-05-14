@@ -30,3 +30,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 I am making module level CV type applicaion in angular In this WE 
 use lazy loading to increase their performance:
+
+
+# Important Point About Skill Component
+Hi , Awais kindly discuss with sir according to skills component design if this final and look
+good then i will work on it 
+
+Best Regards
+WAQAS   
+  
