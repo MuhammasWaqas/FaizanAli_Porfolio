@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkFaizan_Ali=self.webpackChunkFaizan_Ali||[]).push([[514],{8514:(d,n,e)=>{e.r(n),e.d(n,{ResumeModule:()=>o});var a=e(9808),l=e(1223);let o=(()=>{class u{}return u.\u0275fac=function(m){return new(m||u)},u.\u0275mod=l.oAB({type:u}),u.\u0275inj=l.cJS({imports:[[a.ez]]}),u})()}}]);
