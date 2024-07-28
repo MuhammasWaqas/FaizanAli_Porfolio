@@ -1,6 +1,7 @@
 {
   "name": "faizan-ali",
   "version": "0.0.0",
+  "homepage": "https://muhammaswaqas.github.io/FaizanAli_Porfolio",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
